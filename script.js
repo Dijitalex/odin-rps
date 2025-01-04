@@ -10,13 +10,12 @@ function getComputerChoice(){
         return "scissors";
     }
 }
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+
+function getHumanChoice(){
+    let pick = prompt("Hey there, choose rock paper or sizurs.");
+    if (!(pick== "rock" || pick== "paper" || pick== "scissors")){
+        console.log("Invalid prompt, commencing termination protocol.");
+    }
+}
+
+getHumanChoice();
